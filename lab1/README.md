@@ -42,5 +42,5 @@ Optionally extend the API or document it with [Swagger](https://swagger.io).
 - [Azure Computer Vision](https://learn.microsoft.com/en-us/python/api/overview/azure/cognitiveservices-vision-computervision-readme?view=azure-python)
 - [API Design Best Practices](https://blog.stoplight.io/crud-api-design?_ga=2.223919515.1813989671.1674077556-1488117179.1674077556)
 - [API Endpoint Best Practices](https://www.telerik.com/blogs/7-tips-building-good-web-api)
-- The file seai-azure-cv-ocr-api.json has the structure to test calls to the Azure Vision API with Postman.
+- The file `seai-azure-cv-ocr-api.json` has the structure to test calls to the Azure Vision API with Postman.
 
