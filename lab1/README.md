@@ -3,9 +3,9 @@ In homework I1 you will use third-party machine learning APIs and in the group p
 To receive credit for this lab, show your work to the TA during recitation.
 
 ## Deliverables
-- [] Create an account and connect to the Azure Vision API
-- [] Explain to the TA why hard-coding credentials is a bad idea. Commit your code to GitHub without committing your credentials.
-- [] Run the API endpoint with the starter code and demonstrate that it works with an example invocation (e.g., using curl).
+- [ ] Create an account and connect to the Azure Vision API
+- [ ] Explain to the TA why hard-coding credentials is a bad idea. Commit your code to GitHub without committing your credentials.
+- [ ] Run the API endpoint with the starter code and demonstrate that it works with an example invocation (e.g., using curl).
 
 ## Getting started
 Clone the starter code from this Git repository
