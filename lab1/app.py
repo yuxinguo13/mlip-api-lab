@@ -11,7 +11,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Lab 01"
+    image_uri = "https://github.com/Azure-Samples/cognitive-services-python-sdk-samples/raw/master/samples/vision/images/make_things_happen.jpg"
+    res = read_image(image_uri)
+    return res
+
 
 # API at /api/v1/analysis/ 
 @app.route("/api/v1/analysis/", methods=['GET'])
