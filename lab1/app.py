@@ -1,9 +1,3 @@
-"""
-The starter code comes with a flask server that serves the website at http://localhost:3000/ 
-but also exposes an own API at http://localhost:3000/api/v1/analysis/ accepting a GET request with a JSON object with a single field “uri” 
-pointing to an image to analyze.
-"""
-
 from flask import Flask, request, jsonify
 from analyze import read_image
 
@@ -15,8 +9,6 @@ def home():
     res = read_image(image_uri)
     return res
 
-
-# API at /api/v1/analysis/ 
 @app.route("/api/v1/analysis/", methods=['GET'])
 def analysis():
     try:
