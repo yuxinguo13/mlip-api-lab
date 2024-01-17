@@ -14,9 +14,15 @@ def analysis():
     try:
         get_json = request.get_json()
         image_uri = get_json['uri']
+        
         res = read_image(image_uri)
+        
+        response_data = {
+            "text": res
+        }
 
-        return jsonify(res), 200
+    
+        return jsonify(response_data), 200
     except:
         return jsonify({'error': 'Missing URI in JSON'}), 400
 
