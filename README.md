@@ -37,7 +37,6 @@ Identify how to call your own API with a tool like [curl](https://curl.se/docs/m
 
 Optionally extend the API or document it with [Swagger](https://swagger.io).
 
-# TODO - Add Links!!
 ## Additional resources 
 - [Redhat article on API](https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces)
 - [Azure Computer Vision](https://learn.microsoft.com/en-us/python/api/overview/azure/cognitiveservices-vision-computervision-readme?view=azure-python)
