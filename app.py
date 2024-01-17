@@ -1,21 +1,22 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from analyze import read_image
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 @app.route("/")
 def home():
-    image_uri = "https://github.com/Azure-Samples/cognitive-services-python-sdk-samples/raw/master/samples/vision/images/make_things_happen.jpg"
-    res = read_image(image_uri)
-    return res
+    return render_template('index.html')
 
+
+# API at /api/v1/analysis/ 
 @app.route("/api/v1/analysis/", methods=['GET'])
 def analysis():
     try:
         get_json = request.get_json()
         image_uri = get_json['uri']
         res = read_image(image_uri)
-        return res
+
+        return jsonify(res), 200
     except:
         return jsonify({'error': 'Missing URI in JSON'}), 400
 
